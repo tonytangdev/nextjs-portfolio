@@ -9,30 +9,34 @@ const AnimatedNumbers = dynamic(
   { ssr: false }
 );
 
+const years = new Date().getFullYear() - 2018;
+
 const achievementsList = [
   {
-    metric: "Projects",
-    value: "100",
-    postfix: "+",
+    metric: "Years",
+    value: years,
+    postfix: "+"
   },
   {
     prefix: "~",
-    metric: "Users",
-    value: "100,000",
+    metric: "Mentees",
+    value: "10",
   },
   {
-    metric: "Awards",
-    value: "7",
-  },
-  {
-    metric: "Years",
+    metric: "Projects",
     value: "5",
+    postfix: "+"
   },
+  {
+    metric: "Codementor reviews",
+    value: "5",
+    postfix: "★" 
+  }
 ];
 
 const AchievementsSection = () => {
   return (
-    <div className="py-8 px-4 xl:gap-16 sm:py-16 xl:px-16">
+    <div className="px-12 py-8 xl:gap-16 sm:py-16">
       <div className="sm:border-[#33353F] sm:border rounded-md py-8 px-16 flex flex-col sm:flex-row items-center justify-between">
         {achievementsList.map((achievement, index) => {
           return (
@@ -57,7 +61,7 @@ const AchievementsSection = () => {
                 />
                 {achievement.postfix}
               </h2>
-              <p className="text-[#ADB7BE] text-base">{achievement.metric}</p>
+              <p className="text-[#ADB7BE] text-base text-center">{achievement.metric}</p>
             </div>
           );
         })}
