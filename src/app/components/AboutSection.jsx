@@ -50,11 +50,11 @@ const AboutSection = () => {
   return (
     <section className="text-white px-12" id="about">
       <div className="md:grid md:grid-cols-2 gap-8 items-center py-8 xl:gap-16 sm:py-16">
-        <Image src={Room} width={500} height={500} />
+        <Image src={Room} width={500} height={500} alt="room" />
         <div className="mt-4 md:mt-0 text-left flex flex-col h-full">
           <h2 className="text-4xl font-bold text-white mb-4">About Me</h2>
           <p className="text-base lg:text-lg">            
-            Hello, I'm Tony, a Paris-based Lead Tech Web Developer currently at {" "}
+            Hello, I&apos;m Tony, a Paris-based Lead Tech Web Developer currently at {" "}
             <Link
               href={"https://planity.com"}
               className="underline text-primary-500"
@@ -64,7 +64,7 @@ const AboutSection = () => {
             passion lies in transforming complex challenges into simple,
             beautiful, and intuitive solutions. My expertise spans a variety of
             projects, from crafting user-friendly interfaces to optimizing
-            back-end processes. In addition to my professional roles, I've also
+            back-end processes. In addition to my professional roles, I&apos;ve also
             served as a mentor to several students and professionals, guiding
             them through their academic and work projects to successful
             completion. My multifaceted experience makes me a versatile
