@@ -4,7 +4,7 @@ import Link from "next/link";
 
 const ProjectCard = ({ imgUrl, title, description, gitUrl, previewUrl }) => {
   return (
-    <div>
+    <>
       <div
         className="h-52 md:h-72 rounded-t-xl relative group"
         style={{
@@ -35,7 +35,7 @@ const ProjectCard = ({ imgUrl, title, description, gitUrl, previewUrl }) => {
         <h5 className="text-xl font-semibold mb-2">{title}</h5>
         <p className="text-[#ADB7BE]">{description}</p>
       </div>
-    </div>
+    </>
   );
 };
 
