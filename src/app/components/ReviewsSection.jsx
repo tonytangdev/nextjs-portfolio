@@ -57,7 +57,7 @@ const Review = ({ review }) => {
     <div className="grid py-12 border-[#ADB7BE] rounded-xl border">
       <div className="w-[300px] md:w-[524px] px-8 flex flex-col justify-between">
         <p className="mb-14 text-[#ADB7BE]">{review.review}</p>
-        <p className="text-right bottom-0 text-white">{review.name}</p>
+        <p className="text-right bottom-0 text-white font-semibold">{review.name}</p>
       </div>
     </div>
   );
