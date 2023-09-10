@@ -1,6 +1,7 @@
 import React from "react";
 import GithubIcon from "../../../public/github-icon.svg";
 import LinkedinIcon from "../../../public/linkedin-icon.svg";
+import HashnodeIcon from "../../../public/hashnode-icon.svg";
 import Link from "next/link";
 import Image from "next/image";
 
@@ -30,6 +31,9 @@ const EmailSection = () => {
           </Link>
           <Link href="https://www.linkedin.com/in/tony-tang-671248b1/">
             <Image src={LinkedinIcon} alt="Linkedin Icon" />
+          </Link>
+          <Link href="https://tonytangdev.hashnode.dev/" className="flex items-center">
+            <Image src={HashnodeIcon} alt="Hashnode icon" />
           </Link>
         </div>
       </div>

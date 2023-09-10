@@ -36,13 +36,13 @@ export default function ReviewsSection() {
       <h2 className="text-center text-4xl font-bold text-white mt-4 mb-8 md:mb-12">
         Testimonials
       </h2>
-      <div class="relative flex overflow-x-hidden">
-        <div class="py-12 animate-marquee flex gap-16">
+      <div className="relative flex overflow-x-hidden">
+        <div className="py-12 animate-marquee flex gap-16">
           {reviews.map((review) => (
             <Review key={`1-${review.id}`} review={review} />
           ))}
         </div>
-        <div class="absolute top-0 py-12 animate-marquee2 flex gap-16 ml-16">
+        <div className="absolute top-0 py-12 animate-marquee2 flex gap-16 ml-16">
           {reviews.map((review) => (
             <Review key={`2-${review.id}`} review={review} />
           ))}
