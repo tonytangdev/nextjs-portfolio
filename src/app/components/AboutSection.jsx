@@ -30,7 +30,7 @@ const TAB_DATA = [
     id: "education",
     content: (
       <ul className="list-disc pl-2">
-        <li>AWS solution arhitect certification (2019)</li>
+        <li>AWS solution architect certification (2019)</li>
         <li>Supinfo, Computer Science Experts (2014 - 2019)</li>
       </ul>
     ),
